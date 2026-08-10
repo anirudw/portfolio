@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. CSS ROOT CUSTOM PROPERTIES & DESIGN TOKENS
+   1. CSS ROOT CUSTOM PROPERTIES (DESIGN TOKENS)
    -------------------------------------------------------------------------- */
 :root {
   /* --- Minimalist Dark Palette --- */
@@ -27,8 +27,8 @@
   --border-color-hover: #3b3b4f;
 
   /* --- Typography Stacks --- */
-  --font-display: 'THUNDER', 'Harmond', 'Degular Display', 'Syne', 'Clash Display', -apple-system, sans-serif;
-  --font-sans: 'Inter', 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Degular Display', 'THUNDER', 'Harmond', 'Syne', 'Clash Display', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-sans: 'Degular Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-mono: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace;
 
   /* --- Fluid Typography Scale --- */
@@ -118,6 +118,7 @@ html {
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
+  font-family: var(--font-sans);
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -432,7 +433,7 @@ main {
   gap: var(--space-8);
 }
 
-/* Monospace & Plain Text Tech Lists (Dot Separated / Monospace Items) */
+/* Monospace & Plain Text Tech Lists */
 .text-list {
   display: flex;
   flex-direction: column;
