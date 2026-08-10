@@ -405,9 +405,8 @@ main {
    5. HERO SECTION
    -------------------------------------------------------------------------- */
 .hero {
-  padding-top: var(--space-12);
-  padding-bottom: var(--space-12);
-  min-height: calc(80vh - 4.5rem);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-8);
   display: flex;
   flex-direction: column;
   justify-content: center;
