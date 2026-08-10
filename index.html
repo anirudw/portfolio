@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Anirudh S Nair - Computer Science & Engineering student at College of Engineering Trivandrum, software developer, and AI intern.">
-  <title>Anirudh S Nair | Developer Portfolio</title>
   
-  <!-- Font Preconnect & Stylesheet -->
+  <!-- Primary SEO Meta Tags -->
+  <title>Anirudh S Nair | Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Anirudh S Nair — Computer Science student at College of Engineering Trivandrum. Focused on agentic AI workflows, reinforcement learning, and systems engineering.">
+  <meta name="keywords" content="Anirudh S Nair, Software Engineer, Computer Science, College of Engineering Trivandrum, AI Engineer, Rveda, RepoLens, Machine Learning, Systems Engineering">
+  <meta name="author" content="Anirudh S Nair">
+  <link rel="canonical" href="https://anirudw.github.io">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anirudw.github.io">
+  <meta property="og:title" content="Anirudh S Nair | Developer Portfolio">
+  <meta property="og:description" content="Computer Science student at College of Engineering Trivandrum focused on agentic AI workflows and systems engineering.">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anirudh S Nair | Developer Portfolio">
+  <meta name="twitter:description" content="Computer Science student at College of Engineering Trivandrum focused on agentic AI workflows and systems engineering.">
+
+  <!-- Font Preconnect & Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <!-- Foundational Design System CSS -->
+  <!-- Design System Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   
-  <!-- Standalone Vanilla JS -->
+  <!-- Deferred Script Execution -->
   <script src="script.js" defer></script>
 </head>
 <body>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
   <!-- Header / Navigation -->
   <header class="header">
     <div class="container header-container">
       <a href="#" class="brand-logo" aria-label="Anirudh S Nair Home">
-        ANIRUDH S NAIR <span class="brand-dot"></span>
+        ANIRUDH S NAIR
       </a>
 
       <nav class="nav" id="mobile-nav" aria-label="Main Navigation">
@@ -32,20 +51,24 @@
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="https://github.com/anirudw" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="GitHub Profile (opens in new tab)">
+              GitHub ↗
+            </a>
+          </li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <!-- Theme Toggle Button -->
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark or Light Theme" title="Toggle Theme">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
-        <!-- Mobile Navigation Hamburger Toggle -->
+        <!-- Mobile Menu Toggle Button -->
         <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-nav">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -53,8 +76,6 @@
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-
-        <a href="#contact" class="btn btn-sm btn-primary">Get in Touch</a>
       </div>
     </div>
   </header>
@@ -65,32 +86,18 @@
     <!-- Hero Section -->
     <section id="about" class="section hero animate-on-scroll">
       <div class="container">
-        <div class="hero-meta-bar">
-          <span class="badge badge-emerald">Ex-UST AI Intern</span>
-          <span class="badge badge-blue">B.Tech CS (9.31 CGPA)</span>
-        </div>
-
-        <h1 class="heading-xl text-gradient">Anirudh S Nair</h1>
-        <p class="subheading">
-          Computer Science &amp; Engineering Student at College of Engineering Trivandrum
+        <h1 class="heading-display">ANIRUDH S NAIR</h1>
+        <p class="hero-subtitle">
+          Computer Science Student &amp; Software Engineer based in Trivandrum.
         </p>
-        <p class="subheading mt-1-neg">
-          Designing high-quality software systems, building AI solutions, and shipping robust products.
+        <p class="subheading">
+          Pursuing B.Tech CS at College of Engineering Trivandrum. Focused on agentic AI workflows, reinforcement learning environments, and systems engineering.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-lg btn-primary">
-            View Projects
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-          <a href="https://github.com/anirudw" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-            </svg>
-            GitHub
+          <a href="#projects" class="btn btn-lg btn-primary">Selected Projects</a>
+          <a href="https://github.com/anirudw" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-secondary" aria-label="GitHub Profile (opens in new tab)">
+            GitHub ↗
           </a>
         </div>
       </div>
@@ -99,80 +106,52 @@
     <!-- Experience Section -->
     <section id="experience" class="section animate-on-scroll">
       <div class="container">
-        <div class="section-title-block">
-          <p class="section-label">// Career Journey</p>
+        <header class="section-title-block">
+          <p class="section-label">Career Journey</p>
           <h2 class="heading-lg">Experience</h2>
-        </div>
+        </header>
 
         <div class="timeline">
           <!-- Timeline Item 1: UST -->
-          <article class="timeline-item animate-on-scroll">
-            <span class="timeline-dot"></span>
-            <div class="card card-interactive">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-title">Intern</h3>
-                  <p class="timeline-company">UST</p>
-                </div>
-                <span class="timeline-date">May 2026</span>
+          <article class="card card-interactive animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Software Engineering Intern</h3>
+                <p class="timeline-company">UST</p>
               </div>
-              <p class="project-description">
-                Contributed to an agentic AI shopping assistant &amp; queueless checkout system; worked with Flutter, Dart, and data pipelines for real-time retail workflows.
-              </p>
-              <div class="badge-list">
-                <span class="badge badge-neutral">Agentic AI</span>
-                <span class="badge badge-neutral">Flutter</span>
-                <span class="badge badge-neutral">Dart</span>
-                <span class="badge badge-neutral">Data Pipelines</span>
-                <span class="badge badge-neutral">Retail Workflows</span>
-              </div>
+              <span class="timeline-date">May 2026</span>
             </div>
+            <p class="project-description">
+              Contributed to an agentic AI shopping assistant and queueless checkout system. Worked with Flutter, Dart, and data pipelines for real-time retail workflows.
+            </p>
           </article>
 
           <!-- Timeline Item 2: IEEE SB CET & Glitch -->
-          <article class="timeline-item animate-on-scroll">
-            <span class="timeline-dot"></span>
-            <div class="card card-interactive">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-title">Design Lead</h3>
-                  <p class="timeline-company">IEEE SB CET &amp; Glitch</p>
-                </div>
-                <span class="timeline-date">Design Lead</span>
+          <article class="card card-interactive animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Design Lead</h3>
+                <p class="timeline-company">IEEE SB CET &amp; Glitch</p>
               </div>
-              <p class="project-description">
-                Architected Glitch branding from scratch in Figma; led IEEE design operations; organized and presented Figma and Unity workshops.
-              </p>
-              <div class="badge-list">
-                <span class="badge badge-neutral">UI/UX Design</span>
-                <span class="badge badge-neutral">Figma</span>
-                <span class="badge badge-neutral">Branding Architecture</span>
-                <span class="badge badge-neutral">Unity</span>
-                <span class="badge badge-neutral">Design Operations</span>
-              </div>
+              <span class="timeline-date">Design Operations</span>
             </div>
+            <p class="project-description">
+              Architected Glitch branding from scratch in Figma; led IEEE design operations; organized and presented Figma and Unity technical workshops.
+            </p>
           </article>
 
           <!-- Timeline Item 3: ISTE SC CET -->
-          <article class="timeline-item animate-on-scroll">
-            <span class="timeline-dot"></span>
-            <div class="card card-interactive">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-title">Technical Team Member</h3>
-                  <p class="timeline-company">ISTE SC CET</p>
-                </div>
-                <span class="timeline-date">Technical Team</span>
+          <article class="card card-interactive animate-on-scroll">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Technical Team Member</h3>
+                <p class="timeline-company">ISTE SC CET</p>
               </div>
-              <p class="project-description">
-                Co-built official club website using React and Tailwind CSS.
-              </p>
-              <div class="badge-list">
-                <span class="badge badge-neutral">React.js</span>
-                <span class="badge badge-neutral">Tailwind CSS</span>
-                <span class="badge badge-neutral">Frontend Web</span>
-              </div>
+              <span class="timeline-date">Full-Stack Web</span>
             </div>
+            <p class="project-description">
+              Co-built official chapter web platform using React and Tailwind CSS.
+            </p>
           </article>
         </div>
       </div>
@@ -181,10 +160,10 @@
     <!-- Featured Projects Section -->
     <section id="projects" class="section animate-on-scroll">
       <div class="container">
-        <div class="section-title-block">
-          <p class="section-label">// Code &amp; Innovations</p>
+        <header class="section-title-block">
+          <p class="section-label">Code &amp; Systems</p>
           <h2 class="heading-lg">Featured Projects</h2>
-        </div>
+        </header>
 
         <div class="grid-3">
           <!-- Project 1: Rveda -->
@@ -192,28 +171,19 @@
             <div>
               <div class="project-header">
                 <h3 class="project-title">Rveda</h3>
-                <a href="https://github.com/anirudw/rveda" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Rveda on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
+                <a href="https://github.com/anirudw/rveda" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Rveda repository on GitHub (opens in new tab)">
+                  ↗
                 </a>
               </div>
+              <p class="timeline-company mb-2">Meta OpenEnv, PyTorch, Python</p>
               <p class="project-description">
                 Agentic RL Environment for Medical Coding.
               </p>
               <ul class="highlights-list">
-                <li>Top 800 team out of 31,000 in Meta PyTorch OpenEnv Hackathon</li>
-                <li>Multi-turn tool-use layer for ICD-10-CM taxonomy</li>
-                <li>Deterministic hierarchical reward function</li>
+                <li>Top 800 team globally out of 31,000 in Meta PyTorch OpenEnv Hackathon</li>
+                <li>Multi-turn ICD-10-CM taxonomy navigation layer</li>
+                <li>Deterministic reward evaluation function</li>
               </ul>
-            </div>
-            <div class="badge-list">
-              <span class="badge badge-blue">Python</span>
-              <span class="badge badge-neutral">Meta OpenEnv</span>
-              <span class="badge badge-neutral">PyTorch</span>
-              <span class="badge badge-emerald">Reinforcement Learning</span>
             </div>
           </article>
 
@@ -222,27 +192,18 @@
             <div>
               <div class="project-header">
                 <h3 class="project-title">RepoLens</h3>
-                <a href="https://github.com/anirudw/repolens" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View RepoLens on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
+                <a href="https://github.com/anirudw/repolens" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View RepoLens repository on GitHub (opens in new tab)">
+                  ↗
                 </a>
               </div>
+              <p class="timeline-company mb-2">Node.js, npm, Gemini AI</p>
               <p class="project-description">
-                CLI Developer Tool for codebase analysis and context generation.
+                CLI Developer Tool for codebase analysis &amp; context generation.
               </p>
               <ul class="highlights-list">
-                <li>Scaled from idea to production npm package</li>
-                <li>Leveraged AI coding agents end-to-end</li>
+                <li>Production CLI tool built end-to-end with AI coding agents</li>
                 <li>Featured in Strictseal's April 2026 Developer Tools Worth Knowing</li>
               </ul>
-            </div>
-            <div class="badge-list">
-              <span class="badge badge-blue">Node.js</span>
-              <span class="badge badge-neutral">npm</span>
-              <span class="badge badge-emerald">Gemini AI</span>
             </div>
           </article>
 
@@ -251,100 +212,79 @@
             <div>
               <div class="project-header">
                 <h3 class="project-title">E-commerce KPI Dashboard</h3>
-                <a href="https://github.com/anirudw/kpi-dashboard" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View KPI Dashboard on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
+                <a href="https://github.com/anirudw/kpi-dashboard" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View KPI Dashboard repository on GitHub (opens in new tab)">
+                  ↗
                 </a>
               </div>
+              <p class="timeline-company mb-2">Python, Pandas, PostgreSQL, SQL</p>
               <p class="project-description">
-                Full-stack analytics platform for retail datasets and metrics.
+                Full-stack analytics platform on retail datasets.
               </p>
               <ul class="highlights-list">
-                <li>Full-stack analytics platform on retail datasets</li>
-                <li>Optimized SQL aggregations</li>
-                <li>Pandas dashboard for KPI tracking</li>
+                <li>Retail data pipeline and optimized SQL aggregation queries</li>
+                <li>Pandas analytical dashboard for KPI tracking</li>
               </ul>
-            </div>
-            <div class="badge-list">
-              <span class="badge badge-blue">Python</span>
-              <span class="badge badge-neutral">Pandas</span>
-              <span class="badge badge-neutral">PostgreSQL</span>
-              <span class="badge badge-neutral">SQL</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Technical Skills Section -->
+    <!-- Skills & Focus Areas Section -->
     <section id="skills" class="section animate-on-scroll">
       <div class="container">
-        <div class="section-title-block">
-          <p class="section-label">// Capabilities</p>
-          <h2 class="heading-lg">Technical Skills</h2>
-        </div>
+        <header class="section-title-block">
+          <p class="section-label">Capabilities</p>
+          <h2 class="heading-lg">Skills &amp; Focus Areas</h2>
+        </header>
 
         <div class="grid-skills">
-          <!-- Skill Group 1 -->
+          <!-- Group 1 -->
           <div class="card animate-on-scroll">
-            <h3 class="heading-sm mb-4">AI &amp; Systems</h3>
-            <div class="badge-list">
-              <span class="badge badge-blue">Agentic Workflows</span>
-              <span class="badge badge-neutral">LLM Orchestration</span>
-              <span class="badge badge-emerald">Reinforcement Learning</span>
-            </div>
+            <h3 class="heading-sm mb-4">AI &amp; Reinforcement Learning</h3>
+            <ul class="text-list">
+              <li>Agentic Workflows</li>
+              <li>LLM Orchestration</li>
+              <li>Reinforcement Learning</li>
+              <li>PyTorch &amp; Meta OpenEnv</li>
+            </ul>
           </div>
 
-          <!-- Skill Group 2 -->
+          <!-- Group 2 -->
           <div class="card animate-on-scroll">
-            <h3 class="heading-sm mb-4">Languages</h3>
-            <div class="badge-list">
-              <span class="badge badge-neutral">Java</span>
-              <span class="badge badge-neutral">Python</span>
-              <span class="badge badge-neutral">C</span>
-              <span class="badge badge-neutral">JavaScript</span>
-              <span class="badge badge-neutral">SQL</span>
-              <span class="badge badge-neutral">Dart</span>
-            </div>
+            <h3 class="heading-sm mb-4">Core Systems &amp; Languages</h3>
+            <ul class="text-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Dart</li>
+            </ul>
           </div>
 
-          <!-- Skill Group 3 -->
+          <!-- Group 3 -->
           <div class="card animate-on-scroll">
-            <h3 class="heading-sm mb-4">Data &amp; Backend</h3>
-            <div class="badge-list">
-              <span class="badge badge-neutral">Pandas</span>
-              <span class="badge badge-neutral">PostgreSQL</span>
-              <span class="badge badge-neutral">Node.js</span>
-              <span class="badge badge-neutral">Data Pipeline Engineering</span>
-            </div>
+            <h3 class="heading-sm mb-4">Web &amp; Data Pipelines</h3>
+            <ul class="text-list">
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>PostgreSQL &amp; Pandas</li>
+              <li>Flutter</li>
+              <li>Data Pipeline Engineering</li>
+            </ul>
           </div>
 
-          <!-- Skill Group 4 -->
-          <div class="card animate-on-scroll">
-            <h3 class="heading-sm mb-4">Web &amp; Design</h3>
-            <div class="badge-list">
-              <span class="badge badge-neutral">HTML</span>
-              <span class="badge badge-neutral">CSS</span>
-              <span class="badge badge-neutral">React.js</span>
-              <span class="badge badge-neutral">Tailwind CSS</span>
-              <span class="badge badge-neutral">Figma</span>
-              <span class="badge badge-neutral">Canva</span>
-            </div>
-          </div>
-
-          <!-- Skill Group 5 -->
+          <!-- Group 4 -->
           <div class="card animate-on-scroll">
             <h3 class="heading-sm mb-4">Tools &amp; Methods</h3>
-            <div class="badge-list">
-              <span class="badge badge-neutral">Git</span>
-              <span class="badge badge-neutral">GitHub</span>
-              <span class="badge badge-neutral">Docker</span>
-              <span class="badge badge-neutral">VS Code</span>
-              <span class="badge badge-neutral">Agile / Scrum</span>
-            </div>
+            <ul class="text-list">
+              <li>Git &amp; GitHub</li>
+              <li>Docker</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>Agile / Scrum</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -353,10 +293,10 @@
     <!-- Education & Certifications Section -->
     <section id="education" class="section animate-on-scroll">
       <div class="container">
-        <div class="section-title-block">
-          <p class="section-label">// Academic Background</p>
+        <header class="section-title-block">
+          <p class="section-label">Academic Background</p>
           <h2 class="heading-lg">Education &amp; Certifications</h2>
-        </div>
+        </header>
 
         <div class="grid-2">
           <!-- Education Card -->
@@ -366,7 +306,7 @@
                 <h3 class="heading-md">College of Engineering Trivandrum</h3>
                 <p class="subheading text-base mb-1">B.Tech in Computer Science &amp; Engineering</p>
               </div>
-              <span class="badge badge-emerald">9.31 CGPA</span>
+              <span class="timeline-date">9.31 CGPA</span>
             </div>
             <p class="timeline-date">2023 &mdash; Present</p>
           </article>
@@ -398,30 +338,22 @@
 
       <div class="footer-links">
         <div class="email-copy-wrapper">
-          <a href="mailto:anirudh05snair@gmail.com" class="btn btn-primary btn-sm" id="email-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
+          <a href="mailto:anirudh05snair@gmail.com" class="btn btn-primary btn-sm" id="email-link" aria-label="Send email to anirudh05snair@gmail.com">
             anirudh05snair@gmail.com
           </a>
-          <button class="btn btn-secondary btn-sm copy-email-btn" id="copy-email-btn" aria-label="Copy email to clipboard" title="Copy Email">
-            <svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
+          <button class="btn btn-secondary btn-sm copy-email-btn" id="copy-email-btn" aria-label="Copy email address to clipboard" title="Copy Email">
             <span class="copy-text">Copy</span>
           </button>
         </div>
 
-        <a href="https://github.com/anirudw" target="_blank" rel="noopener noreferrer" class="footer-link">
-          GitHub
+        <a href="https://github.com/anirudw" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Anirudh's GitHub Profile (opens in new tab)">
+          GitHub ↗
         </a>
       </div>
     </div>
     <div class="container mt-8 pt-6 border-top flex-between text-xs text-muted">
       <p>&copy; 2026 Anirudh S Nair. All rights reserved.</p>
-      <p>Built with Pure HTML5, CSS3 &amp; Vanilla JS</p>
+      <p>Pure HTML5, CSS3 &amp; Vanilla JS</p>
     </div>
   </footer>
 
