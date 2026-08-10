@@ -29,7 +29,7 @@
   /* --- Typography Stacks --- */
   --font-display: 'Degular Display', 'THUNDER', 'Harmond', 'Syne', 'Clash Display', 'Helvetica Neue', Helvetica, sans-serif;
   --font-sans: 'Degular Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-mono: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace;
+  --font-mono: 'Fira Code', 'JetBrains Mono', 'Courier New', Courier, ui-monospace, monospace;
 
   /* --- Fluid Typography Scale --- */
   --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -414,8 +414,9 @@ main {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.125rem, 1.4vw + 0.75rem, 1.5rem);
-  font-weight: var(--font-weight-medium);
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 1.2vw + 0.75rem, 1.35rem);
+  font-weight: var(--font-weight-regular);
   letter-spacing: -0.01em;
   color: var(--text-primary);
   margin-top: var(--space-4);
